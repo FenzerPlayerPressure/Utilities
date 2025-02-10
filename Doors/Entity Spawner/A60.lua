@@ -6,41 +6,41 @@ local spawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/Regul
 
 local entity = spawner.Create({
 	Entity = {
-		Name = "Template Entity",
-		Asset = "https://github.com/RegularVynixu/Utilities/raw/main/Doors/Entity%20Spawner/Assets/Entities/Rush.rbxm",
+		Name = "A-60",
+		Asset = "rbxassetid://17060855818",
 		HeightOffset = 0
 	},
 	Lights = {
 		Flicker = {
-			Enabled = true,
-			Duration = 1
+			Enabled = false,
+			Duration = 9
 		},
 		Shatter = true,
 		Repair = false
 	},
 	Earthquake = {
-		Enabled = true
+		Enabled = false
 	},
 	CameraShake = {
 		Enabled = true,
-		Range = 100,
+		Range = 270,
 		Values = {1.5, 20, 0.1, 1} -- Magnitude, Roughness, FadeIn, FadeOut
 	},
 	Movement = {
-		Speed = 100,
-		Delay = 2,
+		Speed = 240,
+		Delay = 6,
 		Reversed = false
 	},
 	Rebounding = {
 		Enabled = true,
-		Type = "Ambush", -- "Blitz"
+		Type = "Rush", -- "Blitz"
 		Min = 1,
 		Max = 1,
 		Delay = 2
 	},
 	Damage = {
 		Enabled = true,
-		Range = 40,
+		Range = 50,
 		Amount = 125
 	},
 	Crucifixion = {
@@ -50,9 +50,9 @@ local entity = spawner.Create({
 		Break = true
 	},
 	Death = {
-		Type = "Guiding", -- "Curious"
-		Hints = {"Death", "Hints", "Go", "Here"},
-		Cause = ""
+		Type = "Curious", -- "Guiding"
+		Hints = {"You Died To A60", "Is A Combination Of Rush And Ambush", "Is faster", "Use Tactis of rush"},
+		Cause = "A-60"
 	}
 })
 
