@@ -6,37 +6,37 @@ local spawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/Regul
 
 local entity = spawner.Create({
 	Entity = {
-		Name = "Template Entity",
+		Name = "Maniac Rush",
 		Asset = "https://github.com/RegularVynixu/Utilities/raw/main/Doors/Entity%20Spawner/Assets/Entities/Rush.rbxm",
 		HeightOffset = 0
 	},
 	Lights = {
 		Flicker = {
 			Enabled = true,
-			Duration = 1
+			Duration = 4
 		},
 		Shatter = true,
 		Repair = false
 	},
 	Earthquake = {
-		Enabled = true
+		Enabled = false
 	},
 	CameraShake = {
 		Enabled = true,
-		Range = 100,
+		Range = 200,
 		Values = {1.5, 20, 0.1, 1} -- Magnitude, Roughness, FadeIn, FadeOut
 	},
 	Movement = {
-		Speed = 100,
-		Delay = 2,
+		Speed = 320,
+		Delay = 3,
 		Reversed = false
 	},
 	Rebounding = {
 		Enabled = true,
 		Type = "Ambush", -- "Blitz"
-		Min = 1,
-		Max = 1,
-		Delay = 2
+		Min = 3,
+		Max = 13,
+		Delay = 1
 	},
 	Damage = {
 		Enabled = true,
@@ -45,8 +45,8 @@ local entity = spawner.Create({
 	},
 	Crucifixion = {
 		Enabled = true,
-		Range = 40,
-		Resist = false,
+		Range = 10,
+		Resist = true,
 		Break = true
 	},
 	Death = {
